@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome <span id="user-email"></span></h2>
+    <button onclick="logout()">Logout</button>
+
+    <form id="task-form">
+      <input type="text" id="title" placeholder="Task Title" required />
+      <textarea id="description" placeholder="Task Description" required></textarea>
+      <input type="date" id="dueDate" required />
+      <input type="text" id="assignee" placeholder="Assign To" required />
+      <select id="status" required>
+        <option value="pending">Pending</option>
+        <option value="in-progress">In Progress</option>
+        <option value="completed">Completed</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <h3>Your Tasks</h3>
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
