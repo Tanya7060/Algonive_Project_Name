@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+              url('white-wall\ Task-1.png');
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 30px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 128, 128, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #008080;
+  font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+
+form button {
+  background-color: #008080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #006666;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  background: #d1f0f0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #004d4d;
+  transition: background 0.3s;
+}
+
+.filters button:hover {
+  background: #b2e3e3;
+}
+
+#task-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.task {
+  background: #f9fdfd;
+  border-left: 6px solid #008080;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+.task.complete {
+  background: #d6ffe6;
+  text-decoration: line-through;
+  opacity: 0.85;
+}
+
+.task .actions {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.task button {
+  background: transparent;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
